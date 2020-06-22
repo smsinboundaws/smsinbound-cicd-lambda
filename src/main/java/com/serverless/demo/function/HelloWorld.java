@@ -10,7 +10,7 @@ import com.amazonaws.services.lambda.runtime.RequestHandler;
 public class HelloWorld implements RequestHandler<String, String> {
     @Override
     public String handleRequest(String input, Context context) {
-        String output = "Holaaa" + ((input != null && !input.isEmpty()) ? input : "World");
+        String output = "HELLO" + ((input != null && !input.isEmpty()) ? input : "World");
         context.getLogger().log(output);
         return output;
     }
